@@ -231,7 +231,7 @@ class NcupAnalyticsSpyService {
     final appsflyer_core.AppsFlyerOptions ncupConfig =
     appsflyer_core.AppsFlyerOptions(
       afDevKey: 'qsBLmy7dAXDQhowM8V3ca4',
-      appId:'6773317973',
+      appId:'6773820164',
       showDebug: true,
       timeToWaitForATTUserAuthorization: 0,
     );
@@ -549,7 +549,7 @@ class NcupBosunViewModel {
         'onelink': onelinkData,
         'bundle_identifier': 'com.challangereveiera.reviera.challangereveiera',
         'app_version': '1.4.1',
-        'apple_id': '6773317973',
+        'apple_id': '6773820164',
         'fcm_token': token ?? 'no_token',
         'device_id': NcupDeviceProfileInstance.NcupDeviceId ?? 'no_device',
         'instance_id':
