@@ -27,6 +27,7 @@ import 'package:timezone/data/latest.dart' as tz_data;
 import 'package:timezone/timezone.dart' as tz_zone;
 
 import 'app_reviera.dart';
+import 'loader_reviera.dart';
 
 // ============================================================================
 // Константы
@@ -508,7 +509,7 @@ class _NcupHallState extends State<NcupHall> {
       backgroundColor: Colors.black,
       body: SafeArea(
         child: Center(
-          child: CircularProgressIndicator(),
+          child: PalmGrowLoader(),
         ),
       ),
     );
@@ -3129,7 +3130,7 @@ if(savedata=='false') {
     final Widget webView = Stack(
       children: <Widget>[
         if (NcupCoverVisible)
-          const Center(child: CircularProgressIndicator())
+          const Center(child: PalmGrowLoader())
         else
           Container(
             color: bgColor,
@@ -3611,7 +3612,7 @@ if(savedata=='false') {
                 ),
                 Visibility(
                   visible: !NcupVeilVisible,
-                  child: const Center(child: CircularProgressIndicator()),
+                  child: const Center(child: PalmGrowLoader()),
                 ),
                 if (_isPopupVisible &&
                     (_popupUrl != null || _popupCreateAction != null))
